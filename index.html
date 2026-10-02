@@ -13,8 +13,11 @@
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
         <li><a href="#extracurricular">Extracurricular</a></li>
       </ul>
     </nav>
@@ -46,7 +49,7 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I am an Electronics & Instrumentation student at NIT Silchar passionate about building AI-powered solutions that merge hardware and software. My interests lie in robotics, biomedical AI, and multimodal machine learning. I currently lead AI/ML efforts in the Robotics Club (N.E.R.D.S) and contribute to autonomous drone and rover projects.
+          I am an Electronics & Instrumentation student at NIT Silchar passionate about building AI-powered solutions that merge hardware and software. My interests lie in robotics, biomedical AI, and multimodal machine learning. I currently lead AI/ML efforts in the Robotics Club (N.E.R.D.S) and contribute to autonomous drone and rover projects. My work has been published at IEEE venues and in Ocean Engineering (Elsevier).
         </p>
       </section>
 
@@ -54,8 +57,32 @@
       <section id="education">
         <h2>Education</h2>
         <ul>
-          <li><strong>B.Tech in Electronics & Instrumentation</strong> – NIT Silchar (2023–2027) | CGPA: 9.15</li>
+          <li><strong>B.Tech in Electronics & Instrumentation</strong> – NIT Silchar (Nov 2023 – present) | CGPA: 9.20</li>
+          <li><strong>Higher Secondary</strong> – Ajmal Super 40 (2020–2022) | Score: 80%</li>
         </ul>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="project-item">
+          <h3>AI Intern – Bahash Pvt Ltd</h3>
+          <p>Feb 2026 – Present</p>
+          <p>Developing a novel evaluation metric for factual consistency in Question Answering and Summarization systems.</p>
+        </div>
+
+        <div class="project-item">
+          <h3>Robotics and ML Intern – Nephrocare India (Onsite)</h3>
+          <p>Feb 2025 – Present</p>
+          <p>Developed a remote kidney dialysis monitoring system integrating sensor data with ML-based bubble detection. Integrated anomaly detection (97% accuracy), root cause analysis models, and intelligent fluid control in the machine.</p>
+        </div>
+
+        <div class="project-item">
+          <h3>NLP Intern – Bahash Pvt Ltd</h3>
+          <p>May 2025 – July 2025</p>
+          <p>Developed a Transformer architecture for low-resource multimodal neural machine translation.</p>
+        </div>
       </section>
 
       <!-- Skills -->
@@ -67,7 +94,14 @@
           <li>MATLAB</li>
           <li>PyTorch</li>
           <li>TensorFlow</li>
+          <li>Keras</li>
+          <li>Hugging Face</li>
+          <li>Ultralytics</li>
           <li>OpenCV</li>
+          <li>NumPy</li>
+          <li>scikit-learn</li>
+          <li>ROS2</li>
+          <li>Unity</li>
           <li>Arduino & ESP8266</li>
           <li>Raspberry Pi</li>
           <li>Firebase</li>
@@ -80,33 +114,53 @@
         <h2>Projects</h2>
 
         <div class="project-item">
+          <h3>Low-Cost Real-Time Surgical Simulation and Training Tool</h3>
+          <p>Real-time surgical simulation and training platform in Unity for medical professionals, featuring anatomically accurate organ models with soft-body deformation and AI-assisted training. Includes an ML pipeline that reconstructs labeled 3D organ models directly from CT scan data for import into the simulation.</p>
+          <p>Technologies: Unity, C#, Machine Learning, 3D Reconstruction</p>
+        </div>
+
+        <div class="project-item">
+          <h3>3D Reconstruction using Camera-LiDAR Fusion in ROS2</h3>
+          <p>Camera–LiDAR fusion pipeline for aerial drone perception that turns multi-sensor point clouds into a real-time dense 3D view, simulated in Gazebo with reconstruction visualized in Rviz.</p>
+          <p>Technologies: Kalman Filter, Image Processing, SLAM, ROS2</p>
+          <!-- Add your GitHub link here:
+          <a href="YOUR_GITHUB_LINK" target="_blank">View on GitHub</a> -->
+        </div>
+
+        <div class="project-item">
+          <h3>Marine Autonomous Robotic System (M.A.R.S)</h3>
+          <p>Underwater rover with pipeline and fish detection using YOLO + ViT for path planning. Includes dynamic obstacle detection and avoidance for the autonomous underwater vehicle, and computer-vision algorithms for real-time underwater debris detection and removal planning.</p>
+          <p>Technologies: YOLOv11, Python, LSTM, MATLAB</p>
+          <a href="https://github.com/TheAstrophile-KingK/Pipeline-Detection-For-M.A.R.S" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-item">
           <h3>Autonomous Navigating Aerial Vehicle (ANAV)</h3>
-          <p>Drone with autonomous navigation and safe landing detection, developed for ISRO Robotics Challenge (IRoC-U 2025).</p>
+          <p>Drone with autonomous navigation and safe landing detection, developed for ISRO Robotics Challenge (IRoC-U 2025). Built for navigation, landing, and data processing in GPS-denied environments, with safe path planning and navigation algorithms.</p>
           <a href="https://github.com/Debasish-RS3655/nits-yantrarnav" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-item">
+          <h3>Hand Sign to Text Translation for the Deaf</h3>
+          <p>Hand sign-to-text translation system to improve communication accessibility for the deaf and hard-of-hearing community. Published at IEEE 5th World Conference on Applied Intelligence and Computing (AIC 2026).</p>
+          <p>Technologies: Computer Vision, Deep Learning, Landmark Detection</p>
         </div>
 
         <div class="project-item">
           <h3>Remote Kidney Dialysis System</h3>
           <p>Remote dialysis monitoring system with ML-based bubble detection using Raspberry Pi and Firebase.</p>
-          <p>This is a patented project under DST Govt of India and Nephrocare India.Hence Github Link can't be shared</p>
-          <a href="https://github.com/Debasish-RS3655/nits-yantrarnav" target="_blank">Certificate Link</a>
-        </div>
-
-        <div class="project-item">
-          <h3>Marine Autonomous Robotic System (M.A.R.S)</h3>
-          <p>Underwater rover with pipeline and fish detection using YOLO + ViT for path planning.</p>
-          <a href="https://github.com/TheAstrophile-KingK/Pipeline-Detection-For-M.A.R.S" target="_blank">View on GitHub</a>
+          <p>This is a patented project under DST Govt of India and Nephrocare India. Hence GitHub link can't be shared.</p>
         </div>
 
         <div class="project-item">
           <h3>Navigation System for Blind Individuals</h3>
           <p>Assistive navigation using object detection and Google Maps API to guide visually impaired users.</p>
-          <a href="https://github.com/parthivsaikia/neurathon-finals="_blank">View on GitHub</a>
+          <a href="https://github.com/parthivsaikia/neurathon-finals" target="_blank">View on GitHub</a>
         </div>
         <div class="project-item">
           <h3>Emotion-Aware Book Reading System</h3>
           <p>AI-driven book reader that modulates its voice based on emotional context, enhancing the reading experience.</p>
-          <a href="https://github.com/parthivsaikia/neurathon-finals="_blank">View on GitHub</a>
+          <a href="https://github.com/parthivsaikia/neurathon-finals" target="_blank">View on GitHub</a>
         </div>
         <div class="project-item">
           <h3>AI-Based Farming Model – Smart India Hackathon 2024</h3>
@@ -116,8 +170,51 @@
         <div class="project-item">
           <h3>Multimodal Neural Machine Translation (MNMT) Model</h3>
           <p>Developed an MNMT model for low-resource Khasi language translation using transfer learning and Transformer architecture.</p>
-          <a href=""_blank">View on GitHub</a>
         </div>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications">
+        <h2>Publications</h2>
+
+        <div class="project-item">
+          <h3>Design of an Integrated Guidance & Navigation Planner (i-GNP) for Image Processing-Assisted Motion Planning of an Autonomous Underwater Vehicle</h3>
+          <p>Ocean Engineering (Elsevier, Q1)</p>
+          <!-- <a href="PAPER_LINK" target="_blank">Paper</a> -->
+        </div>
+
+        <div class="project-item">
+          <h3>Autonomous Inspection and Teleoperated Debris Removal for Underwater Pipe Environments</h3>
+          <p>IEEE NE-IECCE 2026, NIT Meghalaya</p>
+          <!-- <a href="PAPER_LINK" target="_blank">Paper</a> -->
+        </div>
+
+        <div class="project-item">
+          <h3>HBT-S2S: A Hybrid BiLSTM–Transformer Architecture for Efficient Landmark-Based Sign-to-Speech Recognition</h3>
+          <!-- <a href="PAPER_LINK" target="_blank">Paper</a> -->
+        </div>
+
+        <div class="project-item">
+          <h3>Hand Sign to Text Translation for the Deaf</h3>
+          <p>IEEE 5th World Conference on Applied Intelligence and Computing (AIC 2026)</p>
+        </div>
+
+        <div class="project-item">
+          <h3>ViT-SMOTE: An Attention-Guided Vision Transformer with SMOTE for Automated PCOS Diagnosis using Ultrasound Imaging</h3>
+          <p>IEEE BECITHCON 2025</p>
+          <!-- <a href="PAPER_LINK" target="_blank">Paper</a> -->
+        </div>
+      </section>
+
+      <!-- Awards -->
+      <section id="awards">
+        <h2>Awards and Honors</h2>
+        <ul>
+          <li>WMT26 Machine Translation Challenge – 1st place (Sub-Task 2D), 2nd place (Sub-Task 1D), fine-tuned NLLB-1.3B via QLoRA</li>
+          <li>Kharagpur Data Science Hackathon, IIT Kharagpur – National Finalist (Top 6 out of 13000+ teams)</li>
+          <li>Hacksagon 2025, ABV-IIITM Gwalior – National Finalist</li>
+          <li>Neurathon 2025, NIT Silchar (Machine Learning Hackathon) – 2nd Runner-Up</li>
+        </ul>
       </section>
 
       <!-- Extracurricular -->
