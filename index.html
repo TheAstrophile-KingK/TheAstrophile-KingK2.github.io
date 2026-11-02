@@ -18,6 +18,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#awards">Awards</a></li>
+        <li id="nav-recommendations" hidden><a href="#recommendations">Recommendations</a></li>
         <li><a href="#extracurricular">Extracurricular</a></li>
       </ul>
     </nav>
@@ -29,7 +30,7 @@
       <img src="profile.jpg" alt="Misbahul Karim" class="profile-pic" />
       <h1>Misbahul Karim</h1>
       <p>B.Tech in Electronics & Instrumentation, NIT Silchar (2023–2027)</p>
-      <p>AI/ML Researcher • Robotics Enthusiast • Embedded Systems Developer</p>
+      <p>AI/ML Researcher • Embedded &amp; Assistive Systems • Robotics</p>
 
       <p class="location">📍 Silchar, Assam, India</p>
 
@@ -49,7 +50,7 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I am an Electronics & Instrumentation student at NIT Silchar passionate about building AI-powered solutions that merge hardware and software. My interests lie in robotics, biomedical AI, and multimodal machine learning. I currently lead AI/ML efforts in the Robotics Club (N.E.R.D.S) and contribute to autonomous drone and rover projects. My work has been published at IEEE venues and in Ocean Engineering (Elsevier).
+          I am an Electronics & Instrumentation student at NIT Silchar passionate about building AI-powered solutions that merge hardware and software. My interests lie in robotics, biomedical AI, and multimodal machine learning. I currently lead AI/ML efforts in the Robotics Club (N.E.R.D.S) and contribute to autonomous drone and rover projects. I am especially interested in human-centred AI systems: assistive tools, health-monitoring devices and embedded machine learning that people use in daily life. My work has been published at IEEE venues and in Ocean Engineering (Elsevier).
         </p>
       </section>
 
@@ -110,14 +111,14 @@
       </section>
 
       <!-- Projects -->
+      <!--
+        MEDIA: each project has a <div class="media"> slot. Put your files in a /media folder
+        in the repo using the filenames below and they appear automatically (missing files are
+        skipped, so nothing looks broken). For long videos, upload to YouTube (unlisted) and add
+        data-youtube="VIDEO_ID" to the slot instead.
+      -->
       <section id="projects">
         <h2>Projects</h2>
-
-        <div class="project-item">
-          <h3>Low-Cost Real-Time Surgical Simulation and Training Tool</h3>
-          <p>Real-time surgical simulation and training platform in Unity for medical professionals, featuring anatomically accurate organ models with soft-body deformation and AI-assisted training. Includes an ML pipeline that reconstructs labeled 3D organ models directly from CT scan data for import into the simulation.</p>
-          <p>Technologies: Unity, C#, Machine Learning, 3D Reconstruction</p>
-        </div>
 
         <div class="project-item">
           <h3>3D Reconstruction using Camera-LiDAR Fusion in ROS2</h3>
@@ -130,6 +131,7 @@
           <h3>Marine Autonomous Robotic System (M.A.R.S)</h3>
           <p>Underwater rover with pipeline and fish detection using YOLO + ViT for path planning. Includes dynamic obstacle detection and avoidance for the autonomous underwater vehicle, and computer-vision algorithms for real-time underwater debris detection and removal planning.</p>
           <p>Technologies: YOLOv11, Python, LSTM, MATLAB</p>
+          <div class="media" data-alt="M.A.R.S underwater rover" data-video="media/mars-demo.mp4" data-images="media/mars-1.jpg"></div>
           <a href="https://github.com/TheAstrophile-KingK/Pipeline-Detection-For-M.A.R.S" target="_blank">View on GitHub</a>
         </div>
 
@@ -140,32 +142,46 @@
         </div>
 
         <div class="project-item">
-          <h3>Hand Sign to Text Translation for the Deaf</h3>
-          <p>Hand sign-to-text translation system to improve communication accessibility for the deaf and hard-of-hearing community. Published at IEEE 5th World Conference on Applied Intelligence and Computing (AIC 2026).</p>
-          <p>Technologies: Computer Vision, Deep Learning, Landmark Detection</p>
+          <h3>HBT-S2S: Landmark-Based Sign-to-Speech Recognition</h3>
+          <p>Hybrid BiLSTM–Transformer model for efficient landmark-based sign-to-speech recognition, built to improve communication accessibility for deaf and hard-of-hearing people. Published at IEEE 5th World Conference on Applied Intelligence and Computing (AIC 2026).</p>
+          <p>Technologies: Computer Vision, Deep Learning, Landmark Detection, BiLSTM, Transformer</p>
+          <div class="media" data-alt="HBT-S2S sign-to-speech demo" data-video="media/hbt-s2s-demo.mp4" data-images="media/hbt-s2s-1.jpg"></div>
         </div>
 
         <div class="project-item">
           <h3>Remote Kidney Dialysis System</h3>
-          <p>Remote dialysis monitoring system with ML-based bubble detection using Raspberry Pi and Firebase.</p>
+          <p>Remote dialysis monitoring system with ML-based bubble detection, anomaly detection (97% accuracy) and automated fluid control, using sensor streams, Raspberry Pi and Firebase.</p>
           <p>This is a patented project under DST Govt of India and Nephrocare India. Hence GitHub link can't be shared.</p>
+          <div class="media" data-alt="Remote dialysis monitoring prototype" data-video="media/dialysis-demo.mp4" data-images="media/dialysis-1.jpg,media/dialysis-2.jpg"></div>
+        </div>
+
+        <div class="project-item">
+          <h3>Low-Cost Real-Time Surgical Simulation and Training Tool</h3>
+          <p>Real-time surgical simulation and training platform in Unity for medical professionals, featuring anatomically accurate organ models with soft-body deformation and AI-assisted training. Includes an ML pipeline that reconstructs labeled 3D organ models directly from CT scan data for import into the simulation.</p>
+          <p>Technologies: Unity, C#, Machine Learning, 3D Reconstruction</p>
+          <div class="media" data-alt="Surgical simulation in Unity" data-video="media/surgical-sim-demo.mp4" data-images="media/surgical-sim-1.jpg"></div>
         </div>
 
         <div class="project-item">
           <h3>Navigation System for Blind Individuals</h3>
           <p>Assistive navigation using object detection and Google Maps API to guide visually impaired users.</p>
+          <div class="media" data-alt="Navigation system for blind individuals" data-video="media/blind-nav-demo.mp4" data-images="media/blind-nav-1.jpg"></div>
           <a href="https://github.com/parthivsaikia/neurathon-finals" target="_blank">View on GitHub</a>
         </div>
+
         <div class="project-item">
           <h3>Emotion-Aware Book Reading System</h3>
           <p>AI-driven book reader that modulates its voice based on emotional context, enhancing the reading experience.</p>
+          <div class="media" data-alt="Emotion-aware book reader" data-video="media/emotion-reader-demo.mp4" data-images="media/emotion-reader-1.jpg"></div>
           <a href="https://github.com/parthivsaikia/neurathon-finals" target="_blank">View on GitHub</a>
         </div>
+
         <div class="project-item">
           <h3>AI-Based Farming Model – Smart India Hackathon 2024</h3>
           <p>Predictive farming model recommending optimal crops based on soil types, with an AI chatbot for organic farming practices.</p>
           <a href="https://github.com/CJKonwar/Crop-recomendation" target="_blank">View on GitHub</a>
         </div>
+
         <div class="project-item">
           <h3>Multimodal Neural Machine Translation (MNMT) Model</h3>
           <p>Developed an MNMT model for low-resource Khasi language translation using transfer learning and Transformer architecture.</p>
@@ -190,12 +206,8 @@
 
         <div class="project-item">
           <h3>HBT-S2S: A Hybrid BiLSTM–Transformer Architecture for Efficient Landmark-Based Sign-to-Speech Recognition</h3>
-          <!-- <a href="PAPER_LINK" target="_blank">Paper</a> -->
-        </div>
-
-        <div class="project-item">
-          <h3>Hand Sign to Text Translation for the Deaf</h3>
           <p>IEEE 5th World Conference on Applied Intelligence and Computing (AIC 2026)</p>
+          <!-- <a href="PAPER_LINK" target="_blank">Paper</a> -->
         </div>
 
         <div class="project-item">
@@ -216,6 +228,12 @@
         </ul>
       </section>
 
+      <!-- Recommendations -->
+      <section id="recommendations" hidden>
+        <h2>Recommendations</h2>
+        <div id="recommendation-list"></div>
+      </section>
+
       <!-- Extracurricular -->
       <section id="extracurricular">
         <h2>Extracurricular Activities</h2>
@@ -227,5 +245,72 @@
       </section>
     </main>
   </div>
+  <script>
+    /* ---------- Recommendations ----------
+       Add one object per letter. The section and its nav link stay hidden while this list is empty.
+       Upload each PDF to a /recommendations folder in the repo, then add an entry like:
+
+       {
+         name: "Dr. Full Name",
+         role: "Professor, Department of EIE, NIT Silchar",
+         context: "Supervised my work on ...",
+         file: "recommendations/dr-full-name.pdf"
+       },
+    */
+    var RECOMMENDATIONS = [
+    ];
+
+    (function () {
+      var section = document.getElementById('recommendations');
+      var navItem = document.getElementById('nav-recommendations');
+      var list = document.getElementById('recommendation-list');
+      if (!RECOMMENDATIONS.length) return;
+
+      RECOMMENDATIONS.forEach(function (r) {
+        var card = document.createElement('div');
+        card.className = 'project-item';
+        var h = document.createElement('h3'); h.textContent = r.name; card.appendChild(h);
+        if (r.role) { var role = document.createElement('p'); role.textContent = r.role; card.appendChild(role); }
+        if (r.context) { var ctx = document.createElement('p'); ctx.textContent = r.context; card.appendChild(ctx); }
+        if (r.file) {
+          var a = document.createElement('a');
+          a.href = r.file; a.target = '_blank'; a.rel = 'noopener';
+          a.textContent = 'Read the letter (PDF)';
+          card.appendChild(a);
+        }
+        list.appendChild(card);
+      });
+      section.hidden = false;
+      navItem.hidden = false;
+    })();
+
+    /* ---------- Project media ----------
+       Fills each .media slot from its data-* attributes. Files that do not exist are skipped. */
+    document.querySelectorAll('.media').forEach(function (box) {
+      if (box.dataset.video) {
+        var v = document.createElement('video');
+        v.controls = true; v.preload = 'metadata'; v.playsInline = true;
+        v.setAttribute('aria-label', box.dataset.alt || 'Project demo video');
+        v.addEventListener('error', function () { v.remove(); });
+        v.src = box.dataset.video;
+        box.appendChild(v);
+      }
+      if (box.dataset.youtube) {
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(box.dataset.youtube);
+        f.title = box.dataset.alt || 'Project demo video';
+        f.loading = 'lazy'; f.allowFullscreen = true;
+        box.appendChild(f);
+      }
+      (box.dataset.images || '').split(',').forEach(function (src) {
+        src = src.trim(); if (!src) return;
+        var img = document.createElement('img');
+        img.loading = 'lazy'; img.alt = box.dataset.alt || '';
+        img.addEventListener('error', function () { img.remove(); });
+        img.src = src;
+        box.appendChild(img);
+      });
+    });
+  </script>
 </body>
 </html>
